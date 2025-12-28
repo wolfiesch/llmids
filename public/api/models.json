@@ -3,8 +3,8 @@
   "updated": "2025-12-28",
   "anthropic": {
     "flagship": {"id": "claude-opus-4-5-20251101", "input": 5.00, "output": 25.00},
-    "fast": {"id": "claude-sonnet-4-5-20241022", "input": 3.00, "output": 15.00},
-    "instant": {"id": "claude-haiku-4-5-20241022", "input": 1.00, "output": 5.00}
+    "fast": {"id": "claude-sonnet-4-5-20250929", "input": 3.00, "output": 15.00},
+    "instant": {"id": "claude-haiku-4-5-20251001", "input": 1.00, "output": 5.00}
   },
   "openai": {
     "flagship": {"id": "gpt-5.2", "input": 1.75, "output": 14.00},
