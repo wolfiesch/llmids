@@ -1,0 +1,42 @@
+{
+  "updated": "2025-12-28T10:11:00Z",
+  "source": "https://github.com/yourusername/ModelList",
+  "models": {
+    "anthropic": {
+      "flagship": "claude-opus-4-5-20251101",
+      "fast": "claude-sonnet-4-20250514",
+      "instant": "claude-haiku-3-5-20241022",
+      "_docs": "https://docs.anthropic.com/en/docs/about-claude/models"
+    },
+    "openai": {
+      "flagship": "gpt-4o",
+      "fast": "gpt-4o-mini",
+      "reasoning": "o3",
+      "reasoning_mini": "o3-mini",
+      "_docs": "https://platform.openai.com/docs/models"
+    },
+    "google": {
+      "flagship": "gemini-2.0-flash",
+      "fast": "gemini-2.0-flash-lite",
+      "reasoning": "gemini-2.0-flash-thinking-exp",
+      "_docs": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    "xai": {
+      "flagship": "grok-2",
+      "fast": "grok-2-mini",
+      "_docs": "https://docs.x.ai/docs/models"
+    },
+    "mistral": {
+      "flagship": "mistral-large-latest",
+      "fast": "mistral-small-latest",
+      "code": "codestral-latest",
+      "_docs": "https://docs.mistral.ai/getting-started/models/"
+    },
+    "meta": {
+      "flagship": "llama-3.3-70b",
+      "small": "llama-3.2-3b",
+      "_docs": "https://llama.meta.com/",
+      "_note": "Meta models typically accessed via providers (Together, Groq, etc.)"
+    }
+  }
+}
