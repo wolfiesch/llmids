@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-28T10:11:00Z",
+  "updated": "2025-12-28T10:37:00Z",
   "source": "https://github.com/yourusername/ModelList",
   "models": {
     "anthropic": {
@@ -9,21 +9,29 @@
       "_docs": "https://docs.anthropic.com/en/docs/about-claude/models"
     },
     "openai": {
-      "flagship": "gpt-4o",
-      "fast": "gpt-4o-mini",
+      "flagship": "gpt-4.1",
+      "flagship_dated": "gpt-4.1-2025-04-14",
+      "fast": "gpt-4.1-mini",
+      "nano": "gpt-4.1-nano",
       "reasoning": "o3",
-      "reasoning_mini": "o3-mini",
+      "reasoning_fast": "o4-mini",
+      "_deprecated": ["gpt-4o", "gpt-4o-mini", "o1", "o1-mini"],
       "_docs": "https://platform.openai.com/docs/models"
     },
     "google": {
-      "flagship": "gemini-2.0-flash",
-      "fast": "gemini-2.0-flash-lite",
-      "reasoning": "gemini-2.0-flash-thinking-exp",
+      "flagship": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash",
+      "lite": "gemini-2.5-flash-lite",
+      "preview": "gemini-3-pro",
+      "_note": "gemini-3-flash is default in Gemini app",
       "_docs": "https://ai.google.dev/gemini-api/docs/models"
     },
     "xai": {
-      "flagship": "grok-2",
-      "fast": "grok-2-mini",
+      "flagship": "grok-4",
+      "flagship_dated": "grok-4-07-09",
+      "fast": "grok-4-1-fast-non-reasoning",
+      "reasoning": "grok-4-1-fast-reasoning",
+      "legacy": "grok-3-beta",
       "_docs": "https://docs.x.ai/docs/models"
     },
     "mistral": {
@@ -36,7 +44,7 @@
       "flagship": "llama-3.3-70b",
       "small": "llama-3.2-3b",
       "_docs": "https://llama.meta.com/",
-      "_note": "Meta models typically accessed via providers (Together, Groq, etc.)"
+      "_note": "Meta models accessed via providers (Together, Groq, Fireworks, etc.)"
     }
   }
 }

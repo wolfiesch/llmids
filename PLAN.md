@@ -70,11 +70,17 @@ GET https://{domain}/api/models.json
 
 | Domain | Status | Notes |
 |--------|--------|-------|
-| `models.fyi` | To check | Short, memorable, .fyi is cheap |
-| `llm.ist` | To check | Very short |
-| `aimodels.dev` | To check | Dev-friendly TLD |
-| `modelids.com` | To check | Obvious but longer |
-| `frontier.models` | To check | Descriptive |
+| `modelids.com` | ✅ AVAILABLE | Best .com option, clear meaning |
+| `modelid.dev` | ✅ AVAILABLE (no DNS) | Short, dev-friendly |
+| `llmid.dev` | ✅ AVAILABLE (no DNS) | Very short |
+| `modellist.dev` | ✅ AVAILABLE (no DNS) | Matches project name |
+| `llmlist.dev` | ✅ AVAILABLE (no DNS) | Alternative |
+| `models.fyi` | ❌ TAKEN | Has DNS records |
+| `llmlist.com` | ❌ TAKEN | - |
+| `frontiermodels.com` | ❌ TAKEN | - |
+| `currentmodels.com` | ❌ TAKEN | - |
+
+**Recommendation**: `modelids.com` - short, clear, .com credibility
 
 ## Tech Stack
 
@@ -145,4 +151,6 @@ response = client.messages.create(
 |------|--------|
 | 12/28/2025 02:11 AM PST | Initial plan created |
 | 12/28/2025 02:15 AM PST | Scaffolded project: models.json, index.html, vercel.json, README.md, git initialized |
+| 12/28/2025 02:33 AM PST | Deployed to Vercel at model-list.vercel.app |
+| 12/28/2025 02:37 AM PST | Domain research: modelids.com available, updated model IDs from official docs |
 
