@@ -1,50 +1,35 @@
 {
-  "updated": "2025-12-28T10:37:00Z",
-  "source": "https://github.com/yourusername/ModelList",
-  "models": {
-    "anthropic": {
-      "flagship": "claude-opus-4-5-20251101",
-      "fast": "claude-sonnet-4-20250514",
-      "instant": "claude-haiku-3-5-20241022",
-      "_docs": "https://docs.anthropic.com/en/docs/about-claude/models"
-    },
-    "openai": {
-      "flagship": "gpt-4.1",
-      "flagship_dated": "gpt-4.1-2025-04-14",
-      "fast": "gpt-4.1-mini",
-      "nano": "gpt-4.1-nano",
-      "reasoning": "o3",
-      "reasoning_fast": "o4-mini",
-      "_deprecated": ["gpt-4o", "gpt-4o-mini", "o1", "o1-mini"],
-      "_docs": "https://platform.openai.com/docs/models"
-    },
-    "google": {
-      "flagship": "gemini-2.5-pro",
-      "fast": "gemini-2.5-flash",
-      "lite": "gemini-2.5-flash-lite",
-      "preview": "gemini-3-pro",
-      "_note": "gemini-3-flash is default in Gemini app",
-      "_docs": "https://ai.google.dev/gemini-api/docs/models"
-    },
-    "xai": {
-      "flagship": "grok-4",
-      "flagship_dated": "grok-4-07-09",
-      "fast": "grok-4-1-fast-non-reasoning",
-      "reasoning": "grok-4-1-fast-reasoning",
-      "legacy": "grok-3-beta",
-      "_docs": "https://docs.x.ai/docs/models"
-    },
-    "mistral": {
-      "flagship": "mistral-large-latest",
-      "fast": "mistral-small-latest",
-      "code": "codestral-latest",
-      "_docs": "https://docs.mistral.ai/getting-started/models/"
-    },
-    "meta": {
-      "flagship": "llama-3.3-70b",
-      "small": "llama-3.2-3b",
-      "_docs": "https://llama.meta.com/",
-      "_note": "Meta models accessed via providers (Together, Groq, Fireworks, etc.)"
-    }
+  "_": "llmids.dev | Current frontier model IDs | github.com/wolfiesch/llmids",
+  "updated": "2025-12-28",
+  "anthropic": {
+    "flagship": "claude-opus-4-5-20251101",
+    "fast": "claude-sonnet-4-20250514",
+    "instant": "claude-haiku-3-5-20241022"
+  },
+  "openai": {
+    "flagship": "gpt-4.1",
+    "fast": "gpt-4.1-mini",
+    "nano": "gpt-4.1-nano",
+    "reasoning": "o3",
+    "reasoning_fast": "o4-mini"
+  },
+  "google": {
+    "flagship": "gemini-2.5-pro",
+    "fast": "gemini-2.5-flash",
+    "lite": "gemini-2.5-flash-lite"
+  },
+  "xai": {
+    "flagship": "grok-4",
+    "fast": "grok-4-1-fast-non-reasoning",
+    "reasoning": "grok-4-1-fast-reasoning"
+  },
+  "mistral": {
+    "flagship": "mistral-large-latest",
+    "fast": "mistral-small-latest",
+    "code": "codestral-latest"
+  },
+  "meta": {
+    "flagship": "llama-3.3-70b",
+    "small": "llama-3.2-3b"
   }
 }

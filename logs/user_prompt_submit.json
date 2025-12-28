@@ -1,0 +1,106 @@
+[
+  {
+    "session_id": "552ffe90-d03a-452d-983b-7651f42d652a",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/552ffe90-d03a-452d-983b-7651f42d652a.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ultrathink can you brainstorm a bunch of potential short punchy memerable URLs we \ncould have for the site we're building - rank all your ideas from best to \nworst and I'll go thru and check each and go with the bestone available"
+  },
+  {
+    "session_id": "d3cf2707-5350-4daf-ba5b-41c5b834742c",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/d3cf2707-5350-4daf-ba5b-41c5b834742c.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/init "
+  },
+  {
+    "session_id": "d3cf2707-5350-4daf-ba5b-41c5b834742c",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/d3cf2707-5350-4daf-ba5b-41c5b834742c.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit and proceed to next steps ultrathink"
+  },
+  {
+    "session_id": "552ffe90-d03a-452d-983b-7651f42d652a",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/552ffe90-d03a-452d-983b-7651f42d652a.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "help me narrow down my shortlist ultrathink"
+  },
+  {
+    "session_id": "552ffe90-d03a-452d-983b-7651f42d652a",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/552ffe90-d03a-452d-983b-7651f42d652a.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "what about modelids.com"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ok I got these ones for $28 total"
+  },
+  {
+    "session_id": "552ffe90-d03a-452d-983b-7651f42d652a",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-ModelList/552ffe90-d03a-452d-983b-7651f42d652a.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "it sounds like mode - lids though"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": " help"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ok i updated"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "is this overcomplicating it with the /api/model.json stuff? ultrathink shouldn't we just provide it all on the home page llmids.dev? i'm not sure, help me think thru it"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "option a ultrathink"
+  },
+  {
+    "session_id": "01cfad40-2106-4bed-89c1-622391e236f9",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects/01cfad40-2106-4bed-89c1-622391e236f9.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/ModelList",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit and then update the actual model ids, use this source for openai model https://platform.openai.com/docs/pricing (also scrape the pricing information and standardize it"
+  }
+]
