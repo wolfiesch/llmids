@@ -1,41 +1,414 @@
 {
-  "_": "llmids.dev | Current frontier model IDs & pricing | github.com/wolfiesch/llmids",
-  "updated": "2025-12-28",
+  "_meta": {
+    "version": "2.0.0",
+    "updated": "2026-01-02",
+    "benchmark_sync": "2026-01-04",
+    "sources": {
+      "pricing": "official provider pages",
+      "benchmarks": ["lmarena.ai", "artificialanalysis.ai", "arcprize.org"]
+    }
+  },
+  "_": "llmids.dev | Current frontier model IDs, specs & pricing | github.com/wolfiesch/llmids",
   "anthropic": {
-    "flagship": {"id": "claude-opus-4-5-20251101", "input": 5.00, "output": 25.00},
-    "fast": {"id": "claude-sonnet-4-5-20250929", "input": 3.00, "output": 15.00},
-    "instant": {"id": "claude-haiku-4-5-20251001", "input": 1.00, "output": 5.00}
+    "flagship": {
+      "id": "claude-opus-4-5-20251101",
+      "input": 5.00,
+      "output": 25.00,
+      "context": {"in": 200000, "out": 32000},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1490,
+        "mmlu_pro": 0.90,
+        "gpqa": 0.87,
+        "humaneval": 0.92,
+        "arc_agi": 0.376
+      },
+      "released": "2025-11-01",
+      "cutoff": "2025-04",
+      "docs": "https://docs.anthropic.com/en/docs/about-claude/models"
+    },
+    "fast": {
+      "id": "claude-sonnet-4-5-20250929",
+      "input": 3.00,
+      "output": 15.00,
+      "context": {"in": 200000, "out": 64000},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1465,
+        "mmlu_pro": 0.88,
+        "gpqa": 0.84,
+        "humaneval": 0.90
+      },
+      "released": "2025-09-29",
+      "cutoff": "2025-04",
+      "docs": "https://docs.anthropic.com/en/docs/about-claude/models"
+    },
+    "instant": {
+      "id": "claude-haiku-4-5-20251001",
+      "input": 1.00,
+      "output": 5.00,
+      "context": {"in": 200000, "out": 8192},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1380,
+        "mmlu_pro": 0.82,
+        "humaneval": 0.85
+      },
+      "released": "2025-10-01",
+      "cutoff": "2025-04",
+      "docs": "https://docs.anthropic.com/en/docs/about-claude/models"
+    }
   },
   "openai": {
-    "flagship": {"id": "gpt-5.2", "input": 1.75, "output": 14.00},
-    "fast": {"id": "gpt-5-mini", "input": 0.25, "output": 2.00},
-    "nano": {"id": "gpt-5-nano", "input": 0.10, "output": 0.40},
-    "reasoning": {"id": "o3", "input": 0.40, "output": 1.60},
-    "reasoning_fast": {"id": "o4-mini", "input": 0.40, "output": 1.60},
-    "previous": {"id": "gpt-4.1", "input": 3.00, "output": 12.00}
+    "flagship": {
+      "id": "gpt-5.2",
+      "input": 1.75,
+      "output": 14.00,
+      "context": {"in": 256000, "out": 32768},
+      "modalities": ["text", "vision", "audio_in", "audio_out", "tools"],
+      "benchmarks": {
+        "arena_elo": 1486,
+        "mmlu_pro": 0.86,
+        "gpqa": 0.93,
+        "humaneval": 0.94,
+        "arc_agi": 0.529
+      },
+      "released": "2025-12",
+      "cutoff": "2025-10",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "fast": {
+      "id": "gpt-5-mini",
+      "input": 0.25,
+      "output": 2.00,
+      "context": {"in": 128000, "out": 16384},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1420,
+        "mmlu_pro": 0.82,
+        "humaneval": 0.88
+      },
+      "released": "2025-09",
+      "cutoff": "2025-06",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "nano": {
+      "id": "gpt-5-nano",
+      "input": 0.10,
+      "output": 0.40,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1340,
+        "humaneval": 0.80
+      },
+      "released": "2025-10",
+      "cutoff": "2025-06",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "reasoning": {
+      "id": "o3",
+      "input": 0.40,
+      "output": 1.60,
+      "context": {"in": 256000, "out": 100000},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1510,
+        "gpqa": 0.95,
+        "arc_agi": 0.62
+      },
+      "released": "2025-12",
+      "cutoff": "2025-10",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "reasoning_fast": {
+      "id": "o4-mini",
+      "input": 0.40,
+      "output": 1.60,
+      "context": {"in": 200000, "out": 65536},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1450,
+        "mmlu_pro": 0.81,
+        "gpqa": 0.75
+      },
+      "released": "2025-12",
+      "cutoff": "2025-10",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "code": {
+      "id": "gpt-5.2-codex",
+      "input": 1.75,
+      "output": 14.00,
+      "context": {"in": 256000, "out": 32768},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "humaneval": 0.94
+      },
+      "released": "2025-12",
+      "cutoff": "2025-10",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "code_max": {
+      "id": "gpt-5.1-codex-max",
+      "input": 1.25,
+      "output": 10.00,
+      "context": {"in": 256000, "out": 65536},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "humaneval": 0.92
+      },
+      "released": "2025-09",
+      "cutoff": "2025-06",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "code_mini": {
+      "id": "gpt-5.1-codex-mini",
+      "input": 0.25,
+      "output": 2.00,
+      "context": {"in": 128000, "out": 16384},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "humaneval": 0.88
+      },
+      "released": "2025-09",
+      "cutoff": "2025-06",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "previous": {
+      "id": "gpt-4.1",
+      "input": 3.00,
+      "output": 12.00,
+      "context": {"in": 128000, "out": 16384},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1385,
+        "mmlu_pro": 0.90,
+        "humaneval": 0.87
+      },
+      "released": "2025-04",
+      "cutoff": "2024-12",
+      "docs": "https://platform.openai.com/docs/models"
+    },
+    "_reasoning_effort": "API param for o3/o4-mini/codex models: low | medium | high | xhigh"
   },
   "google": {
-    "flagship": {"id": "gemini-3-pro-preview", "input": 2.00, "output": 12.00},
-    "fast": {"id": "gemini-3-flash-preview", "input": 0.50, "output": 3.00},
-    "stable": {"id": "gemini-2.5-pro", "input": 1.25, "output": 10.00},
-    "stable_fast": {"id": "gemini-2.5-flash", "input": 0.30, "output": 2.50},
-    "lite": {"id": "gemini-2.5-flash-lite", "input": 0.10, "output": 0.40}
+    "flagship": {
+      "id": "gemini-3-pro-preview",
+      "input": 2.00,
+      "output": 12.00,
+      "context": {"in": 1048576, "out": 65536},
+      "modalities": ["text", "vision", "audio_in", "video", "tools"],
+      "benchmarks": {
+        "arena_elo": 1492,
+        "mmlu_pro": 0.90,
+        "gpqa": 0.919,
+        "humaneval": 0.93,
+        "arc_agi": 0.311
+      },
+      "released": "2025-11",
+      "cutoff": "2025-08",
+      "docs": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    "fast": {
+      "id": "gemini-3-flash-preview",
+      "input": 0.50,
+      "output": 3.00,
+      "context": {"in": 1048576, "out": 65536},
+      "modalities": ["text", "vision", "audio_in", "video", "tools"],
+      "benchmarks": {
+        "arena_elo": 1475,
+        "mmlu_pro": 0.87,
+        "gpqa": 0.88,
+        "humaneval": 0.91
+      },
+      "released": "2025-12",
+      "cutoff": "2025-08",
+      "docs": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    "stable": {
+      "id": "gemini-2.5-pro",
+      "input": 1.25,
+      "output": 10.00,
+      "context": {"in": 1048576, "out": 65536},
+      "modalities": ["text", "vision", "audio_in", "video", "tools"],
+      "benchmarks": {
+        "arena_elo": 1455,
+        "mmlu_pro": 0.86,
+        "gpqa": 0.85,
+        "humaneval": 0.90
+      },
+      "released": "2025-06",
+      "cutoff": "2025-03",
+      "docs": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    "stable_fast": {
+      "id": "gemini-2.5-flash",
+      "input": 0.30,
+      "output": 2.50,
+      "context": {"in": 1048576, "out": 65536},
+      "modalities": ["text", "vision", "audio_in", "video", "tools"],
+      "benchmarks": {
+        "arena_elo": 1430,
+        "mmlu_pro": 0.83,
+        "humaneval": 0.88
+      },
+      "released": "2025-06",
+      "cutoff": "2025-03",
+      "docs": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    "lite": {
+      "id": "gemini-2.5-flash-lite",
+      "input": 0.10,
+      "output": 0.40,
+      "context": {"in": 1048576, "out": 8192},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1350,
+        "humaneval": 0.82
+      },
+      "released": "2025-06",
+      "cutoff": "2025-03",
+      "docs": "https://ai.google.dev/gemini-api/docs/models"
+    }
   },
   "xai": {
-    "flagship": {"id": "grok-4-0709", "input": 3.00, "output": 15.00},
-    "fast": {"id": "grok-4-1-fast-non-reasoning", "input": 0.20, "output": 0.50},
-    "reasoning": {"id": "grok-4-1-fast-reasoning", "input": 0.20, "output": 0.50},
-    "code": {"id": "grok-code-fast-1", "input": 0.20, "output": 1.50}
+    "flagship": {
+      "id": "grok-4-0709",
+      "input": 3.00,
+      "output": 15.00,
+      "context": {"in": 131072, "out": 32768},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1470,
+        "mmlu_pro": 0.85,
+        "humaneval": 0.89
+      },
+      "released": "2025-07",
+      "cutoff": "2025-05",
+      "docs": "https://docs.x.ai/docs/models"
+    },
+    "fast": {
+      "id": "grok-4-1-fast-non-reasoning",
+      "input": 0.20,
+      "output": 0.50,
+      "context": {"in": 131072, "out": 16384},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "arena_elo": 1420,
+        "humaneval": 0.85
+      },
+      "released": "2025-09",
+      "cutoff": "2025-07",
+      "docs": "https://docs.x.ai/docs/models"
+    },
+    "reasoning": {
+      "id": "grok-4-1-fast-reasoning",
+      "input": 0.20,
+      "output": 0.50,
+      "context": {"in": 131072, "out": 65536},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "arena_elo": 1485,
+        "gpqa": 0.88,
+        "arc_agi": 0.42
+      },
+      "released": "2025-09",
+      "cutoff": "2025-07",
+      "docs": "https://docs.x.ai/docs/models"
+    },
+    "code": {
+      "id": "grok-code-fast-1",
+      "input": 0.20,
+      "output": 1.50,
+      "context": {"in": 131072, "out": 32768},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "humaneval": 0.86
+      },
+      "released": "2025-10",
+      "cutoff": "2025-08",
+      "docs": "https://docs.x.ai/docs/models"
+    }
   },
   "mistral": {
-    "flagship": {"id": "mistral-large-latest", "input": 2.00, "output": 6.00},
-    "fast": {"id": "mistral-small-latest", "input": 0.10, "output": 0.30},
-    "code": {"id": "codestral-latest", "input": 0.30, "output": 0.90}
+    "flagship": {
+      "id": "mistral-large-latest",
+      "input": 2.00,
+      "output": 6.00,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1380,
+        "mmlu_pro": 0.84,
+        "humaneval": 0.74
+      },
+      "released": "2025-03",
+      "cutoff": "2024-11",
+      "docs": "https://docs.mistral.ai/getting-started/models/"
+    },
+    "fast": {
+      "id": "mistral-small-latest",
+      "input": 0.10,
+      "output": 0.30,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text", "vision", "tools"],
+      "benchmarks": {
+        "arena_elo": 1350,
+        "mmlu_pro": 0.81,
+        "humaneval": 0.89
+      },
+      "released": "2025-06",
+      "cutoff": "2025-03",
+      "docs": "https://docs.mistral.ai/getting-started/models/"
+    },
+    "code": {
+      "id": "codestral-latest",
+      "input": 0.30,
+      "output": 0.90,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "humaneval": 0.87
+      },
+      "released": "2025-08",
+      "cutoff": "2025-05",
+      "docs": "https://docs.mistral.ai/getting-started/models/"
+    }
   },
   "meta": {
-    "flagship": {"id": "llama-3.3-70b", "input": null, "output": null},
-    "small": {"id": "llama-3.2-3b", "input": null, "output": null},
+    "flagship": {
+      "id": "llama-3.3-70b",
+      "input": null,
+      "output": null,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text", "tools"],
+      "benchmarks": {
+        "arena_elo": 1380,
+        "mmlu_pro": 0.69,
+        "gpqa": 0.51,
+        "humaneval": 0.88
+      },
+      "released": "2024-12",
+      "cutoff": "2024-08",
+      "docs": "https://llama.meta.com/"
+    },
+    "small": {
+      "id": "llama-3.2-3b",
+      "input": null,
+      "output": null,
+      "context": {"in": 128000, "out": 8192},
+      "modalities": ["text"],
+      "benchmarks": {
+        "arena_elo": 1180,
+        "humaneval": 0.62
+      },
+      "released": "2024-09",
+      "cutoff": "2024-03",
+      "docs": "https://llama.meta.com/"
+    },
     "_note": "Open weights - pricing varies by provider"
   },
-  "_pricing": "USD per 1M tokens"
+  "_pricing": "USD per 1M tokens",
+  "_modalities": "text | vision | audio_in | audio_out | video | tools"
 }
